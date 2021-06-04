@@ -1,0 +1,238 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+#inscription_connexion {
+    overflow: hidden;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 10% repeat(12, 5.55%) 10%;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 1%;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: grid;
+    grid-column: 1/span 12;
+    grid-row: 2/span 1;
+    grid-template-columns: 10% repeat(12, 5.55%) 10%;
+    grid-template-rows: repeat(50, auto);
+    grid-column-gap: 1%;
+    width: 100vw;
+
+}
+
+form{
+    display: contents;
+}
+
+form *{
+    margin-top: 1.3vw;
+    margin-bottom: 1.3vw;
+}
+
+/* page inscription/connexion */
+
+
+.separation_inscription_connexion {
+    z-index: 1;
+}
+
+#inscription_connexion > footer {
+    display: grid;
+    grid-template-columns: 16.65% repeat(12, 5.55%) 16.65%;
+    background-color: rgba(255, 131, 18, 0.7);
+    grid-column: 1 / 15;
+    grid-row: 10;
+    width: 100vw;
+}
+
+#inscription_connexion {
+    grid-template-rows: repeat(10, 10%);
+}
+
+input[type=text], input[type=submit] {
+    border-radius: 0 25px;
+    border: 1px solid #FF8312;
+}
+
+.separation_inscription_connexion {
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 7/9;
+    grid-row: 2/9;
+    height: 100%;
+}
+
+.connexion_inscription {
+    display: grid;
+    grid-template-rows: repeat(7, 13.3333%);
+    grid-template-columns: repeat(12, 7.4%);
+    grid-row-gap: 1%;
+    grid-column-gap: 1%;
+    background-color: rgba(41, 39, 39, 0.59);
+    grid-column: 2/14;
+    grid-row: 2/9;
+}
+
+.connexion {
+    display: grid;
+    grid-column: 2/6;
+    grid-row: 2/7;
+}
+
+.connexion > form {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(6, 16.6666%);
+    grid-gap: 1%;
+    grid-column: 1/5;
+}
+
+.inscription{
+    grid-row: 2;
+
+}
+
+.email_connexion {
+    grid-column: 2 / 5;
+    grid-row: 1/2;
+}
+
+.password {
+    grid-column: 2/ 5;
+    grid-row: 2/3;
+}
+
+#bouton_connexion {
+    grid-column: 3/5;
+    grid-row: 6;
+    height: 50%;
+}
+
+#email_connexion {
+    height: 50%;
+    grid-row: 3;
+    grid-column: 2/4;
+}
+
+.zone_texte_email_connexion {
+    grid-column: 1/2;
+    grid-row: 3;
+    height: max-content;
+}
+
+#password {
+    height: 50%;
+    grid-row: 4;
+    grid-column: 2/4;
+}
+
+.zone_texte_password_connexion {
+    grid-column: 1/2;
+    grid-row: 4;
+    height: max-content;
+
+}
+
+.inscription {
+    display: grid;
+    grid-column: 8/12;
+    grid-row: 2/7;
+}
+
+.inscription > form {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: repeat(6, 16.6666%);
+    grid-gap: 1%;
+}
+
+.inscription > form > input {
+    height: 50%;
+    grid-column: 2/4;
+
+}
+
+#fname {
+    grid-column: 2/4;
+    grid-row: 2;
+}
+
+#lname {
+    grid-column: 2/4;
+    grid-row: 3;
+}
+
+#email_inscription {
+    grid-column: 2/4;
+    grid-row: 4;
+}
+
+#mot_de_passe {
+    grid-column: 2/4;
+    grid-row: 5;
+}
+
+#bouton_inscription {
+    grid-column: 3/5;
+    grid-row: 6;
+}
+
+.zone_texte_fname_inscription {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+.zone_texte_lname_inscription {
+    grid-column: 1/2;
+    grid-row: 3;
+}
+
+.zone_texte_email_inscription {
+    grid-column: 1/2;
+    grid-row: 4;
+}
+
+.zone_texte_password_inscription {
+    grid-column: 1/2;
+    grid-row: 5;
+}
+
+#footer_connexion form>input{
+    grid-column: 6/span 1;
+    align-self: center;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+#footer_connexion form>label{
+    grid-column: 7/span 4;
+    align-self: center;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.button_retour_accueil {
+    grid-column: 2/span 2;
+    grid-row: 1/span 1;
+    width: 70%;
+    height: 30%;
+    border-radius: 0 1vw;
+    font-size: 1.7rem;
+    border: 1px solid #FF8312;
+    margin-bottom: auto;
+    margin-top: auto;
+}

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link rel="stylesheet" href="css/style_landing_page.css">
+        <link rel="stylesheet" href="css/inscription_connexion.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/typo.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,7 +24,7 @@
     <button class = "button_retour_accueil" type="button" onclick="window.location.href = 'landing-page.html'" >Accueil</button>
     <div class="connexion_inscription">
         <div class="connexion">
-            <form>
+            <form action="Fil_dactualite.html" method="post">
                     <label class="zone_texte_email_connexion" for="email_connexion">Email</label>
                     <input type="text" id="email_connexion" name="email">
 
@@ -36,19 +36,19 @@
         </div>
 
         <div class="inscription">
-            <form>
+            <form action="Fil_dactualite.html" method="post">
                 <label class="zone_texte_fname_inscription" for="fname">Prénom</label>
-                <input type="text" id="fname" name="prénom">
+                <input type="text" id="fname" name="first_name">
 
                 <label class="zone_texte_lname_inscription" for="lname">Nom</label>
-                <input type="text" id="lname" name="nom">
+                <input type="text" id="lname" name="name">
 
                 <label class="zone_texte_email_inscription" for="email_inscription">Votre email</label>
                 <input type="text" id="email_inscription" name="email">
 
 
                 <label class="zone_texte_password_inscription" for="mot_de_passe">Mot de passe</label>
-                <input type="text" id="mot_de_passe" name="mot_de_passe">
+                <input type="text" id="mot_de_passe" name="password">
 
                 <input id="bouton_inscription" type="submit" value="S'inscrire">
             </form>
